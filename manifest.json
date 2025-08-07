@@ -1,0 +1,22 @@
+{
+  "name": "Fruit Punch Attendance",
+  "short_name": "FP Attendance",
+  "description": "An application for recording fruit punch attendance.",
+  "scope": "./",
+  "start_url": "./Fruit_Punch_audit.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
