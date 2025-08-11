@@ -131,7 +131,7 @@
       <input type="file" id="photo" accept="image/*" capture="environment" required>
       <img id="imagePreview" src="#" alt="Image Preview">
 
-      <button type="submit">Submit</button>
+     <button type="submit" onclick="this.disabled=true; this.form.submit();">Submit</button>
     </form>
 
     <div id="spinner">
@@ -227,3 +227,4 @@
 </body>
 
 </html>
+
