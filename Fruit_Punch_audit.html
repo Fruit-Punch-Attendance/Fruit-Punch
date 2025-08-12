@@ -150,7 +150,7 @@
     const form = document.getElementById("fruitForm");
     const photoInput = document.getElementById("photo");
     const imagePreview = document.getElementById("imagePreview");
-    const submitButton = document.getElementById("submitButton");
+    const submitButton = document.getElementById("submitButton"); // Add this line
 
     // Fill current date & time
     window.onload = function () {
@@ -180,7 +180,7 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      // Disable the submit button and show spinner
+      // Disable the submit button immediately and show spinner
       submitButton.disabled = true;
       document.getElementById("spinner").style.display = "block";
 
@@ -188,7 +188,7 @@
       if (!file) {
         alert("Please take a photo.");
         document.getElementById("spinner").style.display = "none";
-        submitButton.disabled = false;
+        submitButton.disabled = false; // Re-enable if there's an issue
         return;
       }
 
@@ -250,7 +250,7 @@
           })
           .finally(() => {
             document.getElementById("spinner").style.display = "none";
-            submitButton.disabled = false;
+            submitButton.disabled = false; // Re-enable the button after the process is complete
           });
         };
         img.src = reader.result;
